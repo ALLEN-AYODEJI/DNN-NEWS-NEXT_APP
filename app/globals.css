@@ -2,20 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer components {
+  .navLink {
+    @apply hover:underline decoration-orange-400 text-center decoration-2 active:underline underline-offset-8 rounded-full
+    p-4 cursor-pointer hover:font-bold hover:scale-110 transition-transform duration-200 ease-out;
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
