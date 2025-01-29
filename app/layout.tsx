@@ -16,7 +16,7 @@ export default function RootLayout({
       <body className="bglightmode dark:bg-darkmode transition-all duration-700">
         <Header />
 
-        <div className="max-w-6xl mx-auto">{children}</div>
+        <div className="ma x-w-6xl mx-auto">{children}</div>
       </body>
     </html>
   );
